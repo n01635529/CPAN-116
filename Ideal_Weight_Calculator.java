@@ -7,25 +7,17 @@ public class Ideal_Weight_Calculator {
     private final static int BASE_WEIGHT = 110;
     private final static int FEET_INCHES = 12;
     
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
         
-        // Input
         double total_height = input_module(sc);
         
-        // Calculate
         double ideal_weight = calculate_module(total_height);
         
-        // Output
         output_module(total_height, ideal_weight);
     }
     public static double input_module(Scanner scanner) {
-        
-        // input
         
         System.out.println("Enter the height in full feet: ");
         double height_feet = scanner.nextDouble();

@@ -8,14 +8,11 @@ public class Restaurant_Bill_Calculator {
        
         Scanner sc = new Scanner(System.in);
         
-       //input
        double base_price = get_price(sc);
        
-       //calculate
        double ammount_tax = get_tax(base_price);
        double ammount_tip = get_tip(base_price);
        
-       //output
        display_ammounts(base_price, ammount_tip, ammount_tax);
         
     }
@@ -34,11 +31,13 @@ public class Restaurant_Bill_Calculator {
  }
  
  public static double get_tip(double base_price) {
+
      double ammount_tip = base_price * TIP;
      return ammount_tip;
  }
  
  public static void display_ammounts(double base_price, double ammount_tip, double ammount_tax) {
+
      double total_price = base_price + ammount_tip + ammount_tax;
      System.out.println("NET Ammount (Excluding Tax): $" + base_price);
      System.out.println("Tax (%7): $" + String.format("%.2f ", ammount_tax));
