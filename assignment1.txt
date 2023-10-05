@@ -1,0 +1,44 @@
+BEGIN
+
+DECLARE CONSTAN SALES_TAX, TIP
+
+//input
+
+CALL input_module TO GET Base_Price
+
+//Calculate
+
+CALL calculate_module TO GET SALES_TAX, TIP, Ammount_Tax, Ammount_Tip, Total_Price
+
+//Output
+
+CALL output_module TO DISPLAY Base_Price, Ammount_Tax, Ammount_Tip
+
+END
+
+MODULE input_module
+
+SET SALES_TAX = 0.07
+SET TIP = 0.15
+
+OUTPUT "How much does this meal cost? "
+Input Base_Price
+
+END MODULE
+
+MODULE calculate_module
+
+SET Ammount_Tax = Base_Price * SALES_TAX
+SET Ammount_Tip = Base_Price * TIP
+SET Total_Price = Base_Price + Ammount_Tax + Ammount_Tip 
+
+END MODULE
+
+MODULE output_module
+
+OUTPUT "NET Ammount (Excluding Tax): " + Base_Price
+OUTPUT "Tax (%7): " + Ammount_Tax
+OUTPUT "Tip (%15): " + Ammount_Tip
+OUTPUT "Gross Ammount (Including tax and tips): " + Total_Price
+
+END MODULE
