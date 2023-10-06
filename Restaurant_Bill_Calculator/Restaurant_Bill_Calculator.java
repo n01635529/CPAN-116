@@ -1,3 +1,4 @@
+package Restaurant_Bill_Calculator;
 import java.util.Scanner;
 public class Restaurant_Bill_Calculator {
 

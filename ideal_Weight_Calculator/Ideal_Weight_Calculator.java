@@ -1,3 +1,4 @@
+package ideal_Weight_Calculator;
 import java.util.Scanner;
 
 public class Ideal_Weight_Calculator {
