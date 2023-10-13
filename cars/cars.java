@@ -1,4 +1,4 @@
-package cars.src;
+package cars;
 
 public class cars {
     public static void main(String[] args) {
@@ -26,6 +26,7 @@ public class cars {
 
         my_car.brake();
         my_car.brake();
+        my_car.stop();
         System.out.println(my_car.status);
         System.out.println(my_car.speed);
         my_car.honk();

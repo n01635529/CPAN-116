@@ -1,4 +1,4 @@
-package cars.src;
+package cars;
 
 public class carclass {
     String make;
@@ -26,11 +26,11 @@ public class carclass {
     }
 
     public void accelerate(){
-        this.speed = + 20;
+        this.speed += 20;
     }
     
     public void brake(){
-        this.speed = - 10;
+        this.speed -= 10;
     }
 }
  
