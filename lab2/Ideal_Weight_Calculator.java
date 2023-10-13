@@ -1,4 +1,4 @@
-package ideal_Weight_Calculator;
+package lab2;
 import java.util.Scanner;
 
 public class Ideal_Weight_Calculator {

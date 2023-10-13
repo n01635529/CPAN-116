@@ -1,4 +1,4 @@
-package Restaurant_Bill_Calculator;
+package assignment1;
 import java.util.Scanner;
 public class Restaurant_Bill_Calculator {
 
