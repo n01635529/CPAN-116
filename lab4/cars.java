@@ -3,34 +3,27 @@ package lab4;
 public class cars {
     public static void main(String[] args) {
 
-        carclass my_car = new carclass();
-        my_car.make = "Subaru";
-        my_car.model = "Legacy";
-        my_car.year = "2012";
-        my_car.color = "Black";
+        carclass my_car = new carclass("Subaru", "Legacy", "2012", "Black");
         
-        System.out.println(my_car.make);
-        System.out.println(my_car.model);
-        System.out.println(my_car.year);
-        System.out.println(my_car.color);
+        my_car.displayCarInfo();
 
-        System.out.println(my_car.status);
-        System.out.println(my_car.speed);
+        System.out.println(my_car.getStatus());
+        System.out.println(my_car.getSpeed());
 
         my_car.start();
-        System.out.println(my_car.status);
-        System.out.println(my_car.speed);
+        System.out.println(my_car.getStatus());
+        System.out.println(my_car.getSpeed());
 
         my_car.accelerate();
-        System.out.println(my_car.speed);
+        System.out.println(my_car.getSpeed());
 
         my_car.brake();
         my_car.brake();
         my_car.stop();
-        System.out.println(my_car.status);
-        System.out.println(my_car.speed);
+        System.out.println(my_car.getStatus());
+        System.out.println(my_car.getSpeed());
         my_car.honk();
     }
-    
+
 }
  
