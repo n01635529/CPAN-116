@@ -14,4 +14,3 @@ public class test {
         return x+y;
     }
 }
- 
